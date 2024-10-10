@@ -1,6 +1,6 @@
 # Narrows
 
-Narrows is a C++ channel library inspired by Rust's Crossbeam, providing efficient and easy-to-use communication channels for concurrent programming.
+Narrows is a C++ channel library providing efficient and easy-to-use communication channels for concurrent programming. This library was a chance for me to learn more personally about cross thread channels, and probably should only be used with care and consideration.
 
 ## Features
 
