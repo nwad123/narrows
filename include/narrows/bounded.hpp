@@ -1,5 +1,7 @@
 #pragma once
 
+#include "_internal/_channel.hpp"
+
 #include <atomic>
 #include <condition_variable>
 #include <optional>
