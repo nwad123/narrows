@@ -18,3 +18,4 @@ endfunction()
 
 # add the tests
 add_narrows_test(bounded bounded.cpp)
+add_narrows_test(single_bounded single_bounded.cpp)
