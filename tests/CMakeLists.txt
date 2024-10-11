@@ -17,4 +17,4 @@ function(add_narrows_test TESTNAME)
 endfunction()
 
 # add the tests
-add_narrows_test(example_test test.cpp)
+add_narrows_test(bounded bounded.cpp)

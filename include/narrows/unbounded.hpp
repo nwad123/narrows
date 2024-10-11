@@ -2,6 +2,7 @@
 
 #include <atomic>
 #include <condition_variable>
+#include <optional>
 #include <queue>
 
 namespace nrws {
