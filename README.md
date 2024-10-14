@@ -2,7 +2,7 @@
   <img src="https://github.com/nwad123/narrows/blob/main/doc/img/NarrowsGemini.png" width=300>
 
   <h1>
-    Narrows | <code>nrws::*</code>
+    Narrows
   </h1>
 </div>
 
