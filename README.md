@@ -1,7 +1,9 @@
-# Narrows
-
 <div align="center">
   <img src="https://github.com/nwad123/narrows/blob/main/doc/img/NarrowsGemini.png" width=300>
+
+  <h1>
+    narrows::*
+  </h1>
 </div>
 
 Narrows is a C++ channel library providing efficient and easy-to-use communication channels for concurrent programming. This library was a chance for me to learn more personally about cross thread channels, and probably should only be used with care and consideration.
