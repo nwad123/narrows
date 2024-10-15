@@ -119,16 +119,18 @@ handles them well. To do so I'll be using `std::expected`, at least until it mak
 I have to code up my own variant of it.
 
 ```cpp
+using namespace std;
+
 template<typename Sender, typename T>
 concept is_sender = requires(Sender<T> s, T val){
-    { s.send(val) } -> std::convertible_to<std::expected<void, sender_error>>;
+    { s.send(val) } -> convertible_to<expected<void, sender_error>>;
 };
 ```
 
 ```cpp
 template<typename Receiver, typename T>
 concept is_receiver = requires(Receiver<T> r){
-    { r.recv() } -> std::convertible_to<std::expected<T, receiver_error>>;
+    { r.recv() } -> convertible_to<expected<T, receiver_error>>;
 };
 ```
 
@@ -142,3 +144,9 @@ will work well for my use cases now and in the future.
 
 Tradeoffs have been discussed through this doc, and ultimately I'll make more mention of
 tradeoffs as I develop this library more fully.
+
+## Speakers / Listeners
+
+`crossbeam` has a specialization for channels that have a size of 0 where a sender only sends
+something if there is a receiver listening. I chose to separate this feature out into a new
+type of data structure.
