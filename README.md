@@ -58,5 +58,5 @@ Narrows is a C++ channel library providing efficient and easy-to-use communicati
 ## Acknowledgements
 
 - Inspired by [andreiavrammsd/cpp-channel](https://github.com/andreiavrammsd/cpp-channel)
-- Lightly inspired by Rust's Crossbeam library
+- Inspired by Rust's Crossbeam library
 - [Any other acknowledgements]
