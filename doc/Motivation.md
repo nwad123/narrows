@@ -70,9 +70,11 @@ If we were to model this as a C++20 concept, it might look something like this (
 is uncompiled and tested code, I'll update it in the future).
 
 ```cpp
+using namespace std;
+
 template<typename T, typename Sender, typename Receiver, typename Channel>
 concept is_channel = requires {
-    { Channel::new() } -> std::convertible_to<std::pair<Sender, Receiver>>;
+    { Channel::new() } -> convertible_to<pair<Sender, Receiver>>;
 };
 ```
 
@@ -125,9 +127,7 @@ template<typename Sender, typename T>
 concept is_sender = requires(Sender<T> s, T val){
     { s.send(val) } -> convertible_to<expected<void, sender_error>>;
 };
-```
 
-```cpp
 template<typename Receiver, typename T>
 concept is_receiver = requires(Receiver<T> r){
     { r.recv() } -> convertible_to<expected<T, receiver_error>>;
