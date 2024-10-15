@@ -108,7 +108,7 @@ operation that is error prone. Here are some of the most common errors we can ge
 *send* and *receive* operations:
 
 | Error | Explanation |
-| :---: | :---: |
+| :---: | :---- |
 | `sender_error::closed_channel` | Any item cannot be sent on a closed channel, so this is an error |
 | `sender_error::channel_full` | For bounded channels there is a limit to how many things can be sent without being received |
 | `receiver_error::empty_channel` | You can't receive something on an empty channel
