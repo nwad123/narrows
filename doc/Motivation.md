@@ -52,4 +52,4 @@ as *bounded* or *unbounded* channels, and *single* or *multi* channels as follow
 | Bounded | Only a fixed number of items can be stored in the channel at once |
 | Unbounded | The channel can grow as long as it has memory |
 | Single | There is a single producer and a single consumer for the channel |
-| Multi | There can be $n$ producers and $n$ consumers on the channel |
+| Multi | There can be $n$ producers and $m$ consumers on the channel, $m,n\in \mathbb{N}$ |
