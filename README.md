@@ -1,3 +1,5 @@
+⚠️ Warning: this is very much a work in progress and is not ready for use quite yet.
+
 <div align="center">
   <img src="https://github.com/nwad123/narrows/blob/main/doc/img/NarrowsGemini.png" width=300>
 
