@@ -9,6 +9,7 @@ TEST(Bounded, IntConstruction)
 
     bounded_channel<int> ch(15);
     EXPECT_EQ(ch.size(), 0);
+    EXPECT_EQ(ch.capacity(), 15);
     EXPECT_FALSE(ch.closed());
 }
 
