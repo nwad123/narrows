@@ -9,13 +9,25 @@
   </h1>
 </div>
 
-Narrows is a C++ channel library providing efficient and easy-to-use communication channels for concurrent programming. This library was a chance for me to learn more personally about cross thread channels, and you probably want to make sure you consider the tradeoffs I've made before using it for your project. Once I'm done with it, this README will give a good introduction to narrows, but for more information I'd suggest poking around the [docs](./doc/) folder, as it has some writing on the history and design of narrows and can give you an idea of where the library came from.
+Narrows is a C++ channel library providing efficient and easy-to-use communication channels for concurrent programming.
+This library was a chance for me to learn more personally about cross thread channels, and you probably want to make sure
+you consider the tradeoffs I've made before using it for your project. Once I'm done with it, this README will give a good
+introduction to narrows, but for more information I'd suggest poking around the [docs](./doc/) folder, as it has some writing 
+on the history and design of narrows and can give you an idea of where the library came from.
 
 ## Features
 
 - Bounded channel: A channel with a fixed capacity
+    
+    ```cpp
+    auto [s, r] = nrws::bounded<int>(10);
+    ```
+
 - Unbounded channel: A channel with no upper bound on its capacity
-- [List other key features here]
+    
+    ```cpp
+    auto [s, r] = nrws::unbounded<int>();
+    ```
 
 ## Design Tradeoffs
 
